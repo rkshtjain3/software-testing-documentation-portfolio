@@ -219,6 +219,6 @@ software-testing-documentation-portfolio/
 📋 **Version**: 2.1  
 ✅ **Status**: Available for New Projects  
 🏆 **Standards**: IEEE 829, ISTQB, WCAG 2.1, OWASP  
-📞 **Contact**: [Available on Upwork](https://upwork.com) | [LinkedIn Profile](#) | [Portfolio Email](#)  
+📞 **Contact**: [Available on Upwork](https://upwork.com) | [LinkedIn Profile](https://www.linkedin.com/in/rakshit-jain-379576114) | [Portfolio Email](mailto:rkshtjain8@gmail.com)  
 
 *This portfolio demonstrates real-world QA expertise through comprehensive documentation, professional standards compliance, and proven testing methodologies suitable for enterprise-level projects.*
