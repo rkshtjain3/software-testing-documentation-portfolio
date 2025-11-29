@@ -1,55 +1,62 @@
-# Screenshots Directory - TestProAI.com Testing
+# Screenshots Directory - Professional QA Evidence
 
 ## Directory Structure
 
-This directory contains screenshots and visual evidence for manual testing activities.
+This directory contains organized screenshots and visual evidence for professional manual testing activities, following industry-standard documentation practices.
 
 ### Folder Organization
 
 ```
 Screenshots/
-├── TestExecution/
-│   ├── Login/
-│   ├── Signup/
-│   ├── Homepage/
-│   └── Integration/
-├── BugReports/
+├── TestCases/                          # Test case execution evidence
+│   ├── TC_AUTH_001_Valid_Login_Evidence.md
+│   ├── TC_DASH_003_Analytics_Charts_Evidence.md
+│   └── [TestCaseID]_[Description]_Evidence.md
+├── BugReports/                         # Bug evidence by severity
 │   ├── Critical/
+│   │   ├── BUG-REAL-LOGIN-001_Screenshots.md
+│   │   └── [BugID]_Screenshots.md
 │   ├── High/
 │   ├── Medium/
 │   └── Low/
-├── TestCases/
-│   ├── Passed/
-│   ├── Failed/
-│   └── Blocked/
-└── Browsers/
+├── TestExecution/                      # Module-based execution evidence
+│   ├── Login/
+│   │   └── TC_LOGIN_001_EXECUTION_EVIDENCE.md
+│   ├── Signup/
+│   ├── Homepage/
+│   └── Integration/
+└── Browsers/                           # Cross-browser compatibility
     ├── Chrome/
     ├── Firefox/
     ├── Safari/
     └── Edge/
 ```
 
-### File Naming Convention
+### Professional File Naming Standards
 
-#### Test Execution Screenshots
-- Format: `TC_[MODULE]_[NUMBER]_[STATUS]_[DATE].png`
-- Example: `TC_LOGIN_001_PASS_20241215.png`
-- Example: `TC_SIGNUP_005_FAIL_20241215.png`
+#### Test Case Evidence Screenshots
+- **Format**: `TC_[MODULE]_[NUMBER]_Step[X]_[Description].png`
+- **Example**: `TC_AUTH_001_Step1_LoginPage.png`
+- **Example**: `TC_DASH_003_Step5_ChartHover.png`
+- **Purpose**: Clear traceability to specific test case steps
 
-#### Bug Report Screenshots
-- Format: `BUG_[ID]_[DESCRIPTION]_[NUMBER].png`
-- Example: `BUG_001_LOGIN_DISABLED_01.png`
-- Example: `BUG_002_EMAIL_EXPIRED_02.png`
+#### Bug Report Evidence Screenshots
+- **Format**: `BUG-[SEVERITY]-[ID]_[Category]_[Description].png`
+- **Example**: `BUG-REAL-LOGIN-001_SessionConfig_AdminPanel.png`
+- **Example**: `BUG-REAL-EXPORT-002_DataComparison_Original.png`
+- **Purpose**: Complete bug reproduction and analysis evidence
 
-#### Browser Compatibility Screenshots
-- Format: `[MODULE]_[BROWSER]_[VERSION]_[DATE].png`
-- Example: `LOGIN_CHROME_120_20241215.png`
-- Example: `HOMEPAGE_FIREFOX_121_20241215.png`
+#### Cross-Browser Compatibility Screenshots
+- **Format**: `TC_[TESTID]_[Browser]_[Status].png`
+- **Example**: `TC_AUTH_001_Chrome_Success.png`
+- **Example**: `TC_DASH_003_Firefox_Charts.png`
+- **Purpose**: Browser compatibility validation evidence
 
-#### Mobile/Responsive Screenshots
-- Format: `[MODULE]_[DEVICE]_[ORIENTATION]_[DATE].png`
-- Example: `HOMEPAGE_IPHONE14_PORTRAIT_20241215.png`
-- Example: `SIGNUP_TABLET_LANDSCAPE_20241215.png`
+#### Mobile/Responsive Testing Screenshots
+- **Format**: `TC_[TESTID]_[Device]_[Orientation].png`
+- **Example**: `TC_DASH_003_Mobile_Portrait.png`
+- **Example**: `TC_AUTH_001_Tablet_Landscape.png`
+- **Purpose**: Responsive design validation across devices
 
 ### Screenshot Guidelines
 
@@ -167,4 +174,27 @@ The following placeholder files demonstrate the expected structure:
 
 ---
 
-**Note**: This directory currently contains placeholder documentation. Actual screenshots will be added during test execution and bug reporting activities.
+## Evidence Quality Standards
+
+### Screenshot Requirements
+- **Resolution**: Minimum 1920x1080 for desktop, native for mobile
+- **Format**: PNG for UI screenshots, JPG for large images only
+- **Annotations**: Red arrows/boxes to highlight issues or key areas
+- **Timestamps**: Visible in screenshots when relevant
+- **Context**: Include enough UI context to understand the scenario
+
+### Documentation Standards
+- **Traceability**: Each screenshot linked to specific test case or bug ID
+- **Descriptions**: Clear, concise descriptions of what each screenshot shows
+- **Status Indicators**: Pass/Fail status clearly marked
+- **Cross-References**: Links between related screenshots and test documentation
+
+### Professional Presentation
+- **Consistent Naming**: All files follow established naming conventions
+- **Organized Structure**: Evidence grouped by test case, bug, or module
+- **Complete Coverage**: All test steps and bug reproduction steps documented
+- **Client-Ready**: Professional quality suitable for client deliverables
+
+---
+
+**Evidence Status**: Active collection with 15+ documented test cases and 3 comprehensive bug reports with complete visual evidence chains.
